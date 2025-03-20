@@ -1,9 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>간단한 자기소개 페이지</title>
+    <style>
+      /* 전체 페이지 스타일 */
+      body {
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      /* 헤더 스타일 */
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      /* 메인 콘텐츠 스타일 */
+      main {
+        padding: 20px;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.1em;
+        line-height: 1.6;
+      }
+
+      /* 버튼 스타일 */
+      button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1em;
+        margin-top: 20px;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      /* 이미지 스타일 */
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-top: 20px;
+        border: 3px solid #4caf50;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>안녕하세요! 저는 호랑이입니다.</h1>
+    </header>
+    <main>
+      <img src="profile.jpg" alt="프로필 사진" />
+      <p>쿠러그에서 웹개발을 공부하고 있습니다.</p>
+      <p>HTML, CSS, JavaScript를 공부 중이에요!</p>
+      <button onclick="showMessage()">클릭해보세요</button>
+      <p id="message"></p>
+    </main>
+    <script>
+      // JavaScript 코드
+      function showMessage() {
+        const messageElement = document.getElementById("message");
+        messageElement.textContent = "반갑습니다! 😊";
+        messageElement.style.color = "#4CAF50";
+        messageElement.style.fontWeight = "bold";
+      }
+    </script>
+  </body>
 </html>
