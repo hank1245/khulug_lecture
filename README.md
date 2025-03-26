@@ -1,4 +1,5 @@
-# 2025 KHULUG Frontend Development Lectures by Hank Kim
+# 2025 KHULUG Frontend Development Lectures 
+## by Hank Kim
 
 ### Session 1: Web Development Basics & HTML/CSS Fundamentals
 - Overview of Frontend Development (Concepts of Web Development, Frontend vs Backend)
