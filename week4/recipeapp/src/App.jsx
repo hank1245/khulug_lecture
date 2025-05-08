@@ -16,7 +16,7 @@ function App() {
       const data = await res.json();
       setMeals(data.meals || []);
     } catch (err) {
-      console.log("Failed to fetch");
+      console.log(err);
     } finally {
       setLoading(false);
     }
@@ -27,8 +27,29 @@ function App() {
   }, [query]);
 
   return (
-    <div 
-  )
+    <div className="App">
+      <h1>Recipe Finder</h1>
+      <input
+        type="text"
+        placeholder="Search for a meal..."
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      {loading && <p>Loading...</p>}
+      <div className="meals-container">
+        {meals.length > 0 ? (
+          meals.map((meal) => (
+            <div key={meal.idMeal} className="meal-card">
+              <img src={meal.strMealThumb} alt={meal.strMeal} />
+              <h2>{meal.strMeal}</h2>
+            </div>
+          ))
+        ) : (
+          <p>No meals found. Try another search!</p>
+        )}
+      </div>
+    </div>
+  );
 }
 
 export default App;
