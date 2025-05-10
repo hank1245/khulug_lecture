@@ -1,8 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx"; // This will be our recipe detail page
-
+import About from "./pages/About.jsx";
 function App() {
   return (
     <>

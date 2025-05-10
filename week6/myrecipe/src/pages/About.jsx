@@ -49,11 +49,10 @@ function RecipeDetailPage() {
   return (
     <div
       style={{
-        backgroundColor: "#3a3f47", // Card-like background for content
-        padding: "30px",
+        backgroundColor: "#3a3f47",
         borderRadius: "10px",
-        maxWidth: "900px", // Slightly wider for more content
-        margin: "30px auto", // Center with some margin
+        maxWidth: "900px",
+        margin: "30px auto",
         boxShadow: "0 5px 20px rgba(0,0,0,0.25)",
       }}
     >

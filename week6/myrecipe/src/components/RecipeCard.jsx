@@ -8,12 +8,12 @@ function RecipeCard(props) {
       style={{
         textDecoration: "none",
         color: "inherit",
-        display: "block", // Make the link a block element
-        backgroundColor: "#3a3f47", // Card background
-        borderRadius: "10px", // Rounded corners
-        overflow: "hidden", // To contain image border radius
-        boxShadow: "0 4px 15px rgba(0,0,0,0.2)", // Card shadow
-        transition: "transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out", // Hover effect
+        display: "block",
+        backgroundColor: "#3a3f47",
+        borderRadius: "10px",
+        overflow: "hidden",
+        boxShadow: "0 4px 15px rgba(0,0,0,0.2)",
+        transition: "transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
       }}
       onMouseOver={(e) => {
         e.currentTarget.style.transform = "translateY(-5px)";
@@ -29,8 +29,8 @@ function RecipeCard(props) {
         alt={props.meal.strMeal}
         style={{
           width: "100%",
-          height: "200px", // Fixed height for consistency
-          objectFit: "cover", // Ensure image covers the area
+          height: "200px",
+          objectFit: "cover",
         }}
       />
       <div style={{ padding: "15px" }}>
