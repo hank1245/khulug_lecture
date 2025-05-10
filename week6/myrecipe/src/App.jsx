@@ -1,10 +1,15 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx"; // This will be our recipe detail page
 
 function App() {
   return (
     <>
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/recipe/:recipeId" element={<About />} />
+      </Routes>
     </>
   );
 }
